@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        <link rel="icon" type="image/png" href="{{ asset('favicon_semapa.png') }}">
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
@@ -20,8 +21,7 @@
 
             <!-- Page Heading -->
             @isset($header)
-                <header class="bg-white dark:bg-gray-800 shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                <header class="bg-white dark:bg-gray-800 shadow"> 
                         {{ $header }}
                     </div>
                 </header>
